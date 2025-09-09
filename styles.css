@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    a:link{color: white}
+    a:visited{color: white}
+}
+
+.text1 {
+    float: left;
+    font-size: 16pt;
+    font-family: "Fake Receipt";
+    color: white;
+}
+
+.image {
+    text-align: center;
+}
+
+.text2 {
+    float: right;
+    font-size: 16pt;
+    font-family: "Fake Receipt";
+    color: white;
+
+}
+
+.about {
+    color: white;
+    font-size: 16pt;
+    font-family: "Fake Receipt";
+    text-align: center;
+}
+
+.index2 {
+    color: white;
+    text-align: center;
+}
