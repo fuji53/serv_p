@@ -1,0 +1,32 @@
+@import "root.css";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    color: lightskyblue;
+    font-family: "Press Start 2P", system ui;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    background-image: url(../img2/background-main.jpeg);
+    max-width: 1920vh;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main {
+    background-color: black;
+    margin-left: calc(50% - var(--body_box)/2);
+    margin-right: calc(50% - var(--body_box)/2);
+    width: var(--body_box);
+
+    word-break: break-all;
+    white-space: normal;
+
+
+    height: 100vh;
+    padding: 15px;
+}
