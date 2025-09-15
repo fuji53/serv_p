@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: "Arial Narrow";
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    background-color: gray;
+    border-radius: 5px;
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+}
+
+input, button {
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: gray;
+    transition: 0.2s ease-in-out;
+}

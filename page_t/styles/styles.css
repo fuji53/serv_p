@@ -1,0 +1,68 @@
+@import "root.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../img/background_site.png);
+    background-size: cover;
+
+    a:link {
+        color: white
+    }
+
+    a:visited {
+        color: white
+    }
+
+    a:hover {
+        font-size: 18pt;
+        transition: 1s ease-in-out;
+    }
+}
+
+.text1 {
+    float: left;
+    color: black;
+}
+
+img {
+    display: grid;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.text2 {
+    float: right;
+}
+
+.about {
+    text-align: center;
+}
+
+.index2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+p, a {
+    font-family: "Fake Receipt", sans-serif;
+    font-size: 16pt;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
