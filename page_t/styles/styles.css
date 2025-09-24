@@ -6,44 +6,77 @@
     padding: 0;
 }
 
+html {
+    font-size: 16pt;
+    font-family: "Fake Receipt", sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    display: grid;
+    width: 1200px;
+    background-color: var(--background-color);
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 body {
     background: url(../img/background_site.png);
     background-size: cover;
 
     a:link {
-        color: white
+        color: var(--text-primary-color)
     }
 
     a:visited {
-        color: white
+        color: var(--text-primary-color)
     }
 
     a:hover {
-        font-size: 18pt;
-        transition: 1s ease-in-out;
+        font-size: var(--text-lg);
     }
 }
 
-.text1 {
-    float: left;
-    color: black;
+.menu {
+    p {
+        color: var(--text-primary-color);
+        float: right;
+    }
+    background-color: var(--background-color);
+    padding: 15px;
 }
 
-img {
-    display: grid;
-    margin: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    animation: fadeIn;
-    animation-duration: 1s;
-}
-
-.text2 {
+#themeToggler {
+margin-top: -25px;
     float: right;
 }
 
+h1 {
+    color: var(--text-primary-color);
+    font-size: var(--text-3xl);
+    margin-block: 10px;
+}
+
+#breakcore {
+    width: 20%;
+    float: left;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+#channel-link {
+    display: block;
+    text-align: right;
+    animation: runningText 20s linear infinite;
+    margin-block: 5px;
+
+}
+
 .about {
-    text-align: center;
+    text-align: left;
 }
 
 .index2 {
@@ -52,9 +85,16 @@ img {
 }
 
 p, a {
-    font-family: "Fake Receipt", sans-serif;
-    font-size: 16pt;
-    color: white;
+    color: var(--text-primary-color);
+}
+
+a {
+    transition: 1s ease-in-out;
+}
+
+#logo {
+    width: 3%;
+    filter: invert(var(--invert-setting));
 }
 
 @keyframes fadeIn {
@@ -64,5 +104,23 @@ p, a {
     to {
         opacity: 1;
     }
+}
+
+@keyframes runningText {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(30%);
+    }
+}
+
+@font-face {
+    font-family: "Fake Receipt", sans-serif;
+    font-style: normal;
+    font-weight: auto;
+
+    src: local("Fake Receipt");
+url("/fonts/fake receipt.ttf") format("ttf")
 }
 
